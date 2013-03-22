@@ -3,6 +3,7 @@
 </div>
 
   <%= link_to "Nuevo Estado", new_status_path, class: "btn btn-success" %>
+  <%= link_to "Deslogueate", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
   <% @statuses.each do |status| %>
   <div class="status">
     <strong><%= status.name %></strong>
